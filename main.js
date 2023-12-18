@@ -1,18 +1,11 @@
 const botoesCarrossel = document.querySelectorAll('.botao');
 const imagens = document.querySelectorAll('.imagem');
 
-
 botoesCarrossel.forEach((botao, indice) => {
     botao.addEventListener('click', () => {
-        
         desativarBotaoSelecionado();
-
-
         selecionarBotaoCarrosel(botao);
-
-
         esconderImagemAtiva();
-
         mostrarImagemDeFundo(indice);
     })
 })
